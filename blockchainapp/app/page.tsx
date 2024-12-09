@@ -15,9 +15,15 @@ export default function Home() {
     setAmount(0);
   };
 
+  const options = {
+    style: 'decimal',  // Other options: 'currency', 'percent', etc.
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  };
+
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-        <div className="bg-white p-6 shadow-lg rounded-lg w-full max-w-3xl">
+        <div className="bg-white p-6 shadow-lg rounded-lg w-full max-w-max">
           <div className="grid grid-cols-2 gap-6">
             <div>
                 <label htmlFor="amount" className="block text-2xl">ENTER AMOUNT</label>
@@ -54,7 +60,7 @@ export default function Home() {
                   </label>
                 </div>
                 
-                <button 
+                <button
                     className="w-full bg-green-500 hover:scale-95 transition-all duration-75 ease-in px-5 py-2 rounded-md text-white">
                     WITHDRAW
                 </button>
