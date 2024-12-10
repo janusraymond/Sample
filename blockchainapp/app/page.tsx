@@ -9,16 +9,10 @@ export default function Home() {
   const [savings, setSavings] = useState(0);
   const [interest, setInterest] = useState(0);
 
-  const deposit = () => {  // the curly brace opens a multiline function
+  const deposit = () => {
     setSavings(savings + amount);
     setInterest(interest + (amount * .05));
     setAmount(0);
-  };
-
-  const options = {
-    style: 'decimal',  // Other options: 'currency', 'percent', etc.
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
   };
 
   return (
