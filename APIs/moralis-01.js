@@ -1,3 +1,5 @@
+//retrieve token owners from moralis
+
 const { EvmChain } = require('moralis/common-evm-utils');
 const Moralis = require('moralis').default
 const { MORALIS_API_KEY } = process.env;

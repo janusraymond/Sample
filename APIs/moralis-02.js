@@ -1,3 +1,5 @@
+//retrieve wallet history from moralis
+
 const { EvmChain } = require('moralis/common-evm-utils');
 const Moralis = require('moralis').default
 

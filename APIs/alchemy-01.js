@@ -1,5 +1,8 @@
 // Github: https://github.com/alchemyplatform/alchemy-sdk-js
 // Setup: npm install alchemy-sdk
+
+//retrieve token metadata from alchemy
+
 const { Network, Alchemy } = require("alchemy-sdk");
 
 // Optional Config object, but defaults to demo api-key and eth-mainnet.

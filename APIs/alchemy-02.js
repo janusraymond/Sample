@@ -1,3 +1,5 @@
+//retrieve token balance from alchemy
+
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 
 async function main() {
